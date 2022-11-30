@@ -1,0 +1,348 @@
+h1{
+    color: #12284c;
+    font-family: Montserrat Regular,sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+#parent >div{
+  box-shadow: rgb(0 0 0) 0px 0px 0px;
+  text-align: start;
+}
+#parent> div > div{
+    display: flex;
+     justify-content: space-around;
+     margin-right: 61%;
+}
+img{
+    width: 288px;
+    height: 201px;;
+}
+.cart,button{
+    width: 50%;
+    border-radius: 10px;
+    background-color: #008027;
+    color: rgb(239 225 225);
+    border: none;
+    padding: 10px 0;
+   margin-bottom: 10px;
+   margin-left: auto;
+ margin-right: 10%;
+ margin-top: 2%;
+}
+button{
+  width: 32%;
+}
+button > a{
+    text-decoration: none;
+    color:white ;
+}
+hr{
+    width: 997px;
+}
+ select{
+    border: 0.5px solid #dcdcdc;
+    color: #12284c;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Montserrat Light,sans-serif;
+    height: 40px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    letter-spacing: .2px;
+    line-height: 40px;
+    padding: 0 10px;
+    width: 200px
+} 
+label{
+    color: #12284c;
+    font-size: 14px;
+    font-family: Montserrat Medium,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+}
+.sortby{
+    display: inline-block;
+}
+.parent2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.parent3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main1{
+    display: flex;
+    justify-content: space-around;
+}
+.flex1{
+    width: 65%;
+}
+.left{
+    width: 32%;
+margin-left: 4%;
+}
+a{
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration:none
+}
+.Leftsent{
+    line-height: 10%;
+    display: flex;
+
+}
+h5{
+    font-family: Montserrat Light,sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: .14px;
+}
+.line1{
+    width: 282px;
+    margin-top: 0.5%;
+    margin-left: 0px;
+}
+
+.nav2{
+   display: flex;
+}
+ .allproduct{
+    color: #12284c;
+    font-family: Montserrat Light,sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    transition: height .3s;
+    overflow-y: auto;
+    line-height: 1.65;
+} 
+h4{
+    color: #12284c;
+    font-family: Montserrat Medium,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.FilterCategory__Header {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    color: #12284c;
+    font-size: 14px;
+    font-family: Montserrat Medium,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 7px;
+    width: 91%;
+}
+*, :after, :before {
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.FilterCategory .BrandSearch input {
+    border: 0.5px solid #dcdcdc;
+    color: #12284c;
+    font-family: Montserrat Light,sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    height: 100%;
+    letter-spacing: .36px;
+    line-height: 36px;
+    padding: 0 26px 0 10px;
+    width: 100%;
+}
+
+.FilterCategory .BrandSearch {
+    height: 36px;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+.FilterCategory .BrandSearch .Icon {
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 6px;
+    stroke: #12284c;
+    top: 0;
+    width: 16px;
+}
+.svg:not(:root) {
+    overflow: hidden;
+}
+.Icon {
+    display: inline-block;
+    height: 27px;
+    width: 22px;
+    margin-left: 93%;
+    fill: currentColor;
+    vertical-align: middle;
+    stroke-width: 2px;
+    background: none;
+    pointer-events: none;
+}
+body:not(.is-tabbing) button:focus, body:not(.is-tabbing) input:focus, body:not(.is-tabbing) select:focus, body:not(.is-tabbing) textarea:focus {
+    outline: none;
+}
+button, input[type=submit] {
+    cursor: pointer;
+}
+button {
+    background: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+button, input, select, textarea {
+    padding: 0;
+    margin: 0;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input[type=submit] {
+    padding: 0;
+    overflow: visible;
+    background: none;
+    border: none;
+    border-radius: 0;
+    
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.FilterCategory__Filters.Open {
+    border-bottom: 1px solid #d8d8d8;
+    max-height: 200px;
+    margin: 15px 0;
+    padding-bottom: 10px;
+}
+.FilterCategory__Filters {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    max-height: 200px;
+}
+.FilterCategory__Filters, .SubCollections__Links {
+    overflow-y: auto;
+    scrollbar-color: #c4c9ca #f8f8f8;
+    scrollbar-width: thin;
+    transition: height .3s;
+}
+.FilterCategory__Filters .Filter {
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 2;
+    min-height: 20px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body:not(.is-tabbing) button:focus, body:not(.is-tabbing) input:focus, body:not(.is-tabbing) select:focus, body:not(.is-tabbing) textarea:focus {
+    outline: none;
+}
+    .FilterCategory__Header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        color: #12284c;
+        font-size: 14px;
+        font-family: Montserrat Medium,sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .2px;
+        line-height: 24px;
+        border-bottom: 1px solid #d8d8d8;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .Filterall{
+        margin-right: 25%;
+    }
+    .cartbtn{
+        font-weight: bold;
+        padding: 4px 0px;
+        background-color: chocolate;
+        border-radius: 13px;
+        color: white;
+}
+.wbtn{
+    font-weight: bold;
+    padding: 4px 0px;
+    background-color: #56483e;
+    border-radius: 13px;
+    color: white;
+    margin-left: 20%;
+}
+.bag{
+    margin-left: 10%;
+}
+.cartcount12{
+margin-left: 102%;
+}
+.name{
+    margin: 0px;
+}
+.details{
+    margin: 0px;
+}
+.price{
+    margin: 0px;
+}
+.cartbtn,.wbtn{
+    margin: 5%;
+}
+
+
+
+
+

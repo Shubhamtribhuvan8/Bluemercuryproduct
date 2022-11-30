@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .img1{
+            width: 100px;
+            height: 100px;
+        }
+        .main111{  
+        display: flex;
+        justify-content: space-around;
+        }
+        .left1{ 
+       width: 32%;
+       margin-left: 1%;
+        }
+    .right1{
+        width: 424%;
+      }  
+      .img2{
+    width: 144px;
+    height: 115px;
+    display: flex;
+    box-shadow: 0px -3px 11px black;
+    display: flex;
+    justify-content: space-around;
+      }
+      .right2{
+        margin-right: 0%;
+    min-width: max-content;
+      }
+      .p11{
+        margin: 0%;
+    padding: 1px 1px 1px;
+    margin-top: 11%;
+      }
+      h1{
+        margin: 0%;
+    font-size: 22px;
+    line-height: 1.125;
+    font-family: Montserrat Light,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12284c;
+    background: #fff;
+      }
+      p{
+        margin: 3%;
+    color: inherit;
+    background-color: transparent;
+    font-family: Montserrat Regular,sans-serif;
+    font-size: 18px;
+    line-height: 1.125;
+    margin-left: 18%;
+      }
+      p1{
+        color: #333;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin-right: 15px;
+    text-transform: uppercase;
+      }
+      h2{
+        margin:0%;
+      }
+      p3{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    text-align: left;
+    color: #17120f;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 14px
+      }
+      .ppp22{
+        color: #333;
+    font-family: Montserrat Light,sans-serif;
+    margin: 16px 0px 0px;
+      }
+      .FilterCategory__Header {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    color: #12284c;
+    font-size: 14px;
+    font-family: Montserrat Medium,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 7px;
+    width: 91%;
+}
+*, :after, :before {
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.FilterCategory .BrandSearch input {
+    border: 0.5px solid #dcdcdc;
+    color: #12284c;
+    font-family: Montserrat Light,sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    height: 100%;
+    letter-spacing: .36px;
+    line-height: 36px;
+    padding: 0 26px 0 10px;
+    width: 100%;
+}
+
+.FilterCategory .BrandSearch {
+    height: 36px;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+.FilterCategory .BrandSearch .Icon {
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 6px;
+    stroke: #12284c;
+    top: 0;
+    width: 16px;
+}
+.svg:not(:root) {
+    overflow: hidden;
+}
+.Icon {
+    display: inline-block;
+    height: 27px;
+    width: 22px;
+    margin-left: 93%;
+    fill: currentColor;
+    vertical-align: middle;
+    stroke-width: 2px;
+    background: none;
+    pointer-events: none;
+}
+body:not(.is-tabbing) button:focus, body:not(.is-tabbing) input:focus, body:not(.is-tabbing) select:focus, body:not(.is-tabbing) textarea:focus {
+    outline: none;
+}
+button, input[type=submit] {
+    cursor: pointer;
+}
+button {
+    background: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+button, input, select, textarea {
+    padding: 0;
+    margin: 0;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input[type=submit] {
+    padding: 0;
+    overflow: visible;
+    background: none;
+    border: none;
+    border-radius: 0;
+    
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.FilterCategory__Filters.Open {
+    border-bottom: 1px solid #d8d8d8;
+    max-height: 200px;
+    margin: 15px 0;
+    padding-bottom: 10px;
+}
+.FilterCategory__Filters {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    max-height: 200px;
+}
+.FilterCategory__Filters, .SubCollections__Links {
+    overflow-y: auto;
+    scrollbar-color: #c4c9ca #f8f8f8;
+    scrollbar-width: thin;
+    transition: height .3s;
+}
+.FilterCategory__Filters .Filter {
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 2;
+    min-height: 20px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body:not(.is-tabbing) button:focus, body:not(.is-tabbing) input:focus, body:not(.is-tabbing) select:focus, body:not(.is-tabbing) textarea:focus {
+    outline: none;
+}
+    .FilterCategory__Header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        color: #12284c;
+        font-size: 14px;
+        font-family: Montserrat Medium,sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .2px;
+        line-height: 24px;
+        border-bottom: 1px solid #d8d8d8;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .Filterall{
+        margin-right: 25%;
+    }
+   .bag11{
+    padding: 4px 1px 8px;
+    display: flex;
+    background-color: #295db7;
+    width: 429px;
+   }
+
+   .btn-counter-wrapper{
+    display: flex;
+    align-items: center;
+    gap:20px;
+
+}
+   .addtocart1{
+    margin-left: 7%;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 17px;
+    line-height: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+   }
+   .h21{
+    margin-left: 43%;
+    margin-top: 3%;
+    color: white;
+    font-size: 20px;
+   }
+   .icon111{
+    display:inline-block;
+   }
+   .shopping1{
+    padding: 9px 16px 0px;
+    box-shadow: 1px 1px 5px;
+    width: 606px;
+    height: 44px;
+    margin-top: 7%;
+    padding: 6px -8px 31px;
+}
+.productd{
+    margin-left: 19%;
+    margin-top: 14%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd1{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid#e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd2{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd3{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd4{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd5{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid#e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.plus{
+    margin-left: 97%;
+}
+.collapsible {
+    color: #121111;
+    cursor: pointer;
+    padding: 12px;
+    width: 16%;
+    border: none;
+    text-align: left;
+    outline: none;
+    margin-left: 18%;
+    font-family: Montserrat Light,sans-serif;
+    font-size: 20px;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main111">
+       <div class="left1">
+            <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-1_550x.jpg?v=1669131249" class="img2">
+            <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-2_550x.jpg?v=1669131250" class="img2">
+       </div>
+        <div class="right1">
+            <div class="img1">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-1_550x.jpg?v=1669131249" alt="">
+            </div>
+    </div>
+        <div class="right2">
+            <div class="p11">
+            <p1>Augustinus Bader</p1>
+             <h1> The Hydration Heroes With The Rich Cream </h1> 
+             <p1>CONSCIOUS BEAUTY | LIMITED EDITION </p1>
+             <div>
+                <h2>$325</h2>
+                <p3>4 interest-free payments of $81.25 with Klarna. Learn More</p3>
+             </div>
+             <div class="ppp22">
+                Hydrate to the fullest with this heroic skin care duo.&nbsp;    <br>
+            </div>
+           
+            <div class="btn-counter-wrapper">
+                <div class="bag11">
+                    <button aria-label="View bag" class="iconicon" title="Bag" type="button">
+                      <span>
+                          <svg class="Icon Icon--bag" viewBox="0 0 21 22"><g fill="none" fill-rule="evenodd"  stroke="#0D2A4B" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M17.880606 20.8639682H3.1334124c-.37129173.0017849-.68305919-.2725769-.71984982-.6334828L1.16193182 5.3563089c0-.3498629.29034931-.63348281.64851335-.63348281H19.2165435c.358164 0 .6485133.28361991.6485133.63348281l-1.2516307 14.8615069c-.0307971.3708491-.3520112.6540745-.7328201.6461524h0z"> </path>
+                          <path d="M15.4119318 10.10326087V6.1838607c0-2.78792852-2.1931052-5.04799114-4.89843748-5.04799114-2.70533233 0-4.8984375 2.26006262-4.8984375 5.04799114v3.91940017M18.0838068 18.6222826H2.05255682"></path></g></svg></span>
+                           <span class="Header__CartDot null">
+                          <span id="cart-rerender">
+                          </span></span></button>
+                          <a href="p2.html" class="addtocart1">ADD TO BAG</a>
+                          <h2 class="h21">$325</h2>
+                      </div>  
+                          <div class="icon111">
+                           <i class="fa fa-heart" style="font-size:35px;color:red"></i>
+                           <span class="cartcount1"id="cart-count" id="cartbtn" >0</span>
+                           </div>
+                         </div>
+                   </div>
+                   <div class="shopping1">
+                    <h2>Shipping & Returns</h2>
+                   </div>
+             </div>
+             
+        </div>
+        <button class="productd">Product Information <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd1">What's Included <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd2">Ingredients <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd3">How To Use <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd4">Complete the Routine <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd5">Reviews <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+
+            <button type="button" class="collapsible">About the Brand</button>
+            <div class="content">
+             <p>Developed by a world-leading expert in stem cell research, Professor Augustinus Bader has spent thirty years unlocking the body’s innate processes to self-heal. The result? Game-changing skincare that uses a unique Trigger Factor Complex called TFC8® to optimize skin health, visibly reduce the damage caused by environmental stressors, and restore skin radiance.
+
+                Learn more about founder Augustinus Bader in this exclusive Q+A!</p>
+          </div>
+    </div>  
+</body>
+</html>
+<script src="product.js"></script>
